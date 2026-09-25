@@ -79,8 +79,8 @@ const Footer = () => {
     <FaMapMarkerAlt className="infoIcon" />
 
     <p>
-      197, Tulsipur,
-      Varanasi, Uttar Pradesh 221010
+     Premkunj Apartment 
+    197- Tulsipur- Birdopur Mahmoorganj, Varanasi pin-221010
     </p>
   </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
     <p>
       {/* TODO: confirm full weekly hours — listing only
           showed "Opens 9am Fri" for the closed day checked */}
-      Opens 9am · Hours vary by day
+      11 am to 8 pm (monday- Saturday)
     </p>
   </div>
 
@@ -107,7 +107,7 @@ const Footer = () => {
 
     <p>
       {/* TODO: replace with real business email */}
-      gautambijlaniphotography@gmail.com
+     gbijlani7@gmail.com
     </p>
   </div>
 

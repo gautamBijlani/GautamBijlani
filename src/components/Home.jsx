@@ -17,6 +17,13 @@ const Home = () => {
   const [experience, setExperience] = useState(0);
   const [activePhoto, setActivePhoto] = useState(0);
 
+  const WHATSAPP_NUMBER = "919919099495";
+  const WHATSAPP_MESSAGE =
+  "Hi! I'd like to book a session with Gautam Bijlani Photography.";
+  const bookNowLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+  WHATSAPP_MESSAGE
+)}`;
+
   const founderPhotos = [
     { src: Gautam1, alt: "Gautam Bijlani" },
     { src: Gautam2, alt: "Gautam Bijlani behind the camera" },
@@ -84,7 +91,11 @@ const Home = () => {
       Explore Portfolio
     </button>
 
-    <button className="secondaryBtn">
+    <button className="secondaryBtn"
+    onClick={() => {
+    window.open(bookNowLink, "_blank", "noopener,noreferrer");
+  }}
+    >
       Book Session
     </button>
   </div>
@@ -277,7 +288,9 @@ At Gautam Bijlani Photography, we transform those fleeting moments into timeless
     Book your premium wedding photography and cinematic film session with Gautam Bijlani Photography.
   </p>
 
-  <button className="primaryBtn">Book Your Date</button>
+  <button className="primaryBtn" onClick={() => {
+    window.open(bookNowLink, "_blank", "noopener,noreferrer");
+  }}>Book Your Date</button>
 </section>
     </div>
   );
