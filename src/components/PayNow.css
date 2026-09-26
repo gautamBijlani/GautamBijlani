@@ -1,0 +1,245 @@
+.payNowPage {
+  min-height: 100vh;
+  background: var(--primary);
+  color: var(--textPrimary);
+  font-family: "Mulish", sans-serif;
+}
+
+/* HERO */
+
+.payNowHero {
+  position: relative;
+  text-align: center;
+  padding: 120px 20px 80px;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(15, 15, 15, 0.85),
+      var(--primary)
+    );
+}
+
+.payNowEyebrow {
+  margin-bottom: 14px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.payNowHero h1 {
+  margin: 0;
+  color: var(--secondary);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 7vw, 82px);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.payNowSubtitle {
+  max-width: 600px;
+  margin: 22px auto 0;
+  color: var(--textSecondary);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* PAYMENT SECTION */
+
+.paymentSection {
+  padding: 20px 20px 100px;
+}
+
+.paymentCard {
+  width: min(1050px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  background: var(--cardBg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* QR */
+
+.qrSection {
+  padding: 55px 45px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionLabel {
+  margin-bottom: 25px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.qrWrapper {
+  width: 280px;
+  max-width: 100%;
+  padding: 14px;
+  background: var(--secondary);
+  border-radius: 4px;
+}
+
+.qrWrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.scanText {
+  max-width: 340px;
+  margin: 25px auto 0;
+  color: var(--textSecondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* BANK DETAILS */
+
+.bankSection {
+  padding: 55px 55px;
+}
+
+.bankSection h2 {
+  margin: 0 0 35px;
+  color: var(--secondary);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.bankDetails {
+  border-top: 1px solid var(--border);
+}
+
+.detailRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 20px;
+  padding: 19px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.detailRow span {
+  color: var(--textSecondary);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.detailRow strong {
+  color: var(--secondary);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* NOTE */
+
+.paymentNote {
+  margin-top: 35px;
+  padding: 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--primaryLight);
+}
+
+.paymentNote span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.paymentNote p {
+  margin: 0;
+  color: var(--textSecondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .paymentCard {
+    grid-template-columns: 1fr;
+  }
+
+  .qrSection {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .qrWrapper {
+    width: 260px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .payNowHero {
+    padding: 90px 20px 55px;
+  }
+
+  .payNowEyebrow {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+  }
+
+  .payNowHero h1 {
+    font-size: 50px;
+  }
+
+  .payNowSubtitle {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .paymentSection {
+    padding: 10px 15px 70px;
+  }
+
+  .qrSection,
+  .bankSection {
+    padding: 40px 22px;
+  }
+
+  .qrWrapper {
+    width: 230px;
+  }
+
+  .bankSection h2 {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+
+  .detailRow {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 16px 0;
+  }
+
+  .detailRow span {
+    font-size: 11px;
+  }
+
+  .detailRow strong {
+    font-size: 14px;
+    word-break: break-word;
+  }
+
+  .paymentNote {
+    margin-top: 25px;
+    padding: 16px;
+  }
+}

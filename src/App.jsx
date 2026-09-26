@@ -9,6 +9,8 @@ import Album from './components/Album'
 import FloatingContact from './components/FloatingContact'
 import { useEffect, useState } from 'react'
 import Testemonial from './components/Testemonial'
+import Packages from './components/Packages'
+import PayNow from "./components/PayNow";
 import { Routes,Route} from 'react-router-dom'
 function App() {
   const [loader, setLoader] = useState(true)
@@ -34,6 +36,8 @@ function App() {
               <Route path='/album' element={<Album />} />
               
               <Route path='/testimonials' element={<Testemonial/>}/>
+              <Route path='/packages' element={<Packages />} />
+              <Route path="/pay-now" element={<PayNow />} />
               {/* <Route path='/buy-frames' element={<h1>Buy Frames</h1>} /> */}₹
             </Routes>
             <Footer/>

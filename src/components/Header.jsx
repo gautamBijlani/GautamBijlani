@@ -5,7 +5,14 @@ import { NavLink } from "react-router-dom";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import "./Header.css";
 
-const links = ["Home", "Services", "Album", "Testimonials"];
+const links = [
+  "Home",
+  "Services",
+  "Packages",
+  "Pay Now",
+  "Album",
+  "Testimonials",
+];
 
 // Same WhatsApp number used in FloatingContact — keep these in sync
 const WHATSAPP_NUMBER = "919919099495";
