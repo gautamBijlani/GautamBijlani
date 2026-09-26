@@ -277,12 +277,7 @@ const Packages = () => {
           START A CONVERSATION
         </button>
 
-        <div className="contactDetails">
-          <span>9919099495</span>
-          <span>gautambijlaniphotoflash@gmail.com</span>
-          <span>gbijlani7@gmail.com</span>
-          <span>Instagram: @gautambijlaniphotography_08</span>
-        </div>
+  
       </section>
 
     </main>
